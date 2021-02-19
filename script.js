@@ -4,7 +4,7 @@ const todaysWeather = document.getElementById("todays-weather")
 const container = document.getElementById("container")
 
 
-fetch ("http://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=cd2e520714b56e5fd7e92da11e1db7f3")
+fetch ("https://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=cd2e520714b56e5fd7e92da11e1db7f3")
   .then((response) => {
     return response.json()
   })
