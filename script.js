@@ -37,7 +37,7 @@ fetch ("https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&unit
       const forecastTemp = Math.round(filteredForecast[i].main.temp * 10) / 10
       const icon = filteredForecast[i].weather[0].icon
       forecast.innerHTML +=`
-        <p class="forecast-paragraph">${days} <img src="http://openweathermap.org/img/wn/${icon}@2x.png">${forecastTemp}°C</p>
+        <p class="forecast-paragraph">${days} <img src="https://openweathermap.org/img/wn/${icon}@2x.png">${forecastTemp}°C</p>
       `
     }
   })
